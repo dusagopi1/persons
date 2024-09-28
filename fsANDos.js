@@ -5,6 +5,6 @@ console.log(user.username);
 // ola
 
 //using fs
-
+// pc
 a.appendFile('greeting.txt','hi'+user.username+'&&\n',()=>{console.log('file is created')});
 //()=>{file creatted}  ----> this is used to call callback wehn the programmed runned succesfully
