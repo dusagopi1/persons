@@ -2,6 +2,7 @@ var a=require('fs');
 var b=require('os');
 var user=b.userInfo();
 console.log(user.username);
+// ola
 
 //using fs
 
