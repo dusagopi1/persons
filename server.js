@@ -5,8 +5,9 @@ const db = require('./db'); // Import the database connection (ensure the correc
 const Person = require('./models/persons'); // Import the Person model for interacting with the 'persons' collection
 const hotelDetails=require('./models/hotel');
 const bodyParser = require('body-parser'); // Import body-parser middleware to parse JSON requests
-// const PORT=3000;
+
 const PORT = process.env.PORT || 3000;
+require('dotenv').config();
 // Middleware to parse JSON requests
 app.use(bodyParser.json());
 
@@ -94,6 +95,6 @@ app.get('/persons/:workType',async(req,res)=>
 
 
 // Start the server and listen on port 3000
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Server started on port 3000'); // Log a message indicating that the server is running
 });

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB connection string
-const mongoUrl = 'mongodb+srv://dusagopi1:dusagopi1@cluster0.cjpnc.mongodb.net/studDetails';
+const mongoUrl = process.env.MONGODB_URL;
 
 mongoose.connect(mongoUrl, {
   // Removed deprecated options
