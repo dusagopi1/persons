@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const mongoUrl = 'mongodb+srv://dusagopi1:dusagopi1@cluster0.cjpnc.mongodb.net/';
+// const mongoUrl = 'mongodb://localhost:27017/studDetails';
+const mongoUrl ='mongodb+srv://dusagopi1:dusagopi1@cluster0.cjpnc.mongodb.net/';
 
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
