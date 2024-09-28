@@ -85,7 +85,8 @@ app.get('/persons/:workType',async(req,res)=>
     }
     const getDataWorker= await Person.find()
   }
-  catch(er)
+  // helo
+  catch(e
   {
     res.status(404).json('not found');
   }
