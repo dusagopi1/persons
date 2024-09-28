@@ -1,12 +1,10 @@
 const mongoose = require('mongoose');
 
-// const mongoUrl = 'mongodb://localhost:27017/studDetails';
-const mongoUrl ='mongodb+srv://dusagopi1:dusagopi1@cluster0.cjpnc.mongodb.net/';
+// MongoDB connection string
+const mongoUrl = 'mongodb+srv://dusagopi1:dusagopi1@cluster0.cjpnc.mongodb.net/studDetails';
 
 mongoose.connect(mongoUrl, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  
+  // Removed deprecated options
 });
 
 const db = mongoose.connection;

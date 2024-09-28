@@ -5,7 +5,7 @@ const db = require('./db'); // Import the database connection (ensure the correc
 const Person = require('./models/persons'); // Import the Person model for interacting with the 'persons' collection
 const hotelDetails=require('./models/hotel');
 const bodyParser = require('body-parser'); // Import body-parser middleware to parse JSON requests
-
+const PORT=3000;
 // Middleware to parse JSON requests
 app.use(bodyParser.json());
 
