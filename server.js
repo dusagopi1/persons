@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 //   res.send('hi hello'); // Send a response with "hi hello"
 // });
 app.get('/sail', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'hhh.html'));
+  res.send('helo');
 });
 
 // Define a POST endpoint to create a new person
