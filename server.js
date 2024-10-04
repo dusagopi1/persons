@@ -12,10 +12,10 @@ require('dotenv').config();
 app.use(bodyParser.json());
 
 // Define a simple GET endpoint to respond with a greeting
-app.get('/', (req, res) => {
-  res.send('hi hello'); // Send a response with "hi hello"
-});
-app.get('/', (req, res) => {
+// app.get('/', (req, res) => {
+//   res.send('hi hello'); // Send a response with "hi hello"
+// });
+app.get('/sail', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'hhh.html'));
 });
 
