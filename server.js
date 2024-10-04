@@ -15,6 +15,9 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('hi hello'); // Send a response with "hi hello"
 });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'hhh.html'));
+});
 
 // Define a POST endpoint to create a new person
 app.post('/persons', async (req, res) => {
