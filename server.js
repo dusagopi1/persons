@@ -5,7 +5,7 @@ const db = require('./db'); // Import the database connection (ensure the correc
 const Person = require('./models/persons'); // Import the Person model for interacting with the 'persons' collection
 const hotelDetails=require('./models/hotel');
 const bodyParser = require('body-parser'); // Import body-parser middleware to parse JSON requests
-
+const path=require('path');
 const PORT = process.env.PORT || 3000;
 require('dotenv').config();
 // Middleware to parse JSON requests
@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 // app.get('/', (req, res) => {
 //   res.send('hi hello'); // Send a response with "hi hello"
 // });
-app.get('/sail', (req, res) => {
-  res.send('helo');
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'hhh.html'));
 });
 
 // Define a POST endpoint to create a new person
